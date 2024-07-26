@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="
+https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/css/jquery.animatedheadline.min.css
+" rel="stylesheet">
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 600px;
+      margin-top: 20px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   b{
+    color: rgb(129, 138, 214);
+   }
+
+  </style>
+</head>
+
+<body>
+    <div class="selector">
+        <h1 class="ah-headline">
+            <span>My favorite movie is:-</span>
+            <span class="ah-words-wrapper">
+                <b class="is-visible">avenger:end Game</b>
+                <b>cap stave roger</b>
+                <b>baki bans</b>
+            </span>
+        </h1>
+    </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://w0.peakpx.com/wallpaper/127/1000/HD-wallpaper-avengers-poster-hero-endgame-marvel-film-poster-art.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://www.panicposters.com/cdn/shop/products/pp33548-avengers-ultron-poster.jpg?v=1681579880" alt=""></div>
+        <div class="swiper-slide"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2018/03/Avengers-Infinity-War-official-poster.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://cdn.europosters.eu/image/hp/47626.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://ew.com/thmb/SxX24pd37HBqlngY4af6iEMB34c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/infinity-war-2000-d9c5bb406e5942098548808e9df20eef.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.thedirect.com/media/article_full/avengers-endgame-posterss.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://imageio.forbes.com/specials-images/imageserve/5e67b406aa54280007597c5b/Scarlett-Johansson-in-Marvel-s--Black-Widow-/0x0.jpg?format=jpg&crop=592,333,x0,y69,safe&width=960" alt=""></div>
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51ZzYYomqDL._AC_UF1000,1000_QL80_.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://townsquare.media/site/442/files/2017/10/captain_america_the_winter_soldier_ver2_xlg.jpg" alt=""></div>
+        </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+    <script>
+    $(function() {
+        $('.selector').animatedHeadline({
+            animationType: 'type'
+        });
+    })
+</script>
+
+</body>
+
+</html>
